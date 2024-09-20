@@ -1,6 +1,6 @@
 "use client";
 import React, { createContext, useState, useContext } from "react";
-import themes from "./themes";
+import themes from "./theme";
 import axios from "axios";
 import toast from "react-hot-toast";
 import { useUser } from "@clerk/nextjs";
