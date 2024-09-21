@@ -54,7 +54,7 @@ export default function RootLayout({
                 </>
               ) : (
                 // If no userId, show SignIn page
-                <div className="flex items-center justify-center h-screen">
+                <div className="flex items-center justify-center w-full">
                   <SignIn />
                 </div>
               )}

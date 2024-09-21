@@ -1,6 +1,6 @@
 export const bars = <i className="fa-solid fa-bars fa-beat"></i>;
 export const arrowLeft = <i className="fa-solid fa-arrow-left fa-beat"></i>;
-
+export const board = <i className="fa-solid fa-chess-board"></i>;
 export const add = <i className="fa-solid fa-plus"></i>;
 export const moon = <i className="fa-solid fa-moon"></i>;
 export const search = <i className="fa-solid fa-magnifying-glass"></i>;

@@ -1,4 +1,4 @@
-import { list, check, todo, home } from "./Icons";
+import { list, check, todo, home, board } from "./Icons";
 
 const menu = [
   {
@@ -25,6 +25,13 @@ const menu = [
     icon: todo,
     link: "/incomplete",
   },
+  {
+    id: 5,
+    title: "Kanban Board",
+    icon: board,
+    link: "/Kanban",
+  },
+  
 ];
 
 export default menu;

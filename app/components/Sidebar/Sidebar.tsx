@@ -40,9 +40,9 @@ function Sidebar() {
         <div className="image">
           <Image width={70} height={70} src={imageUrl} alt="profile" />
         </div>
-        <div className="user-btn absolute z-20 top-0 w-full h-full">
+        {/* <div className="user-btn absolute z-20 top-0 w-full h-full">
           <UserButton />
-        </div>
+        </div> */}
         <h1 className="capitalize">
           {firstName} {lastName}
         </h1>
@@ -205,7 +205,7 @@ const SidebarStyled = styled.nav<{ collapsed: boolean }>`
 
     > h1 {
       margin-left: 0.8rem;
-      font-size: clamp(1.2rem, 4vw, 1.4rem);
+      font-size: clamp(0.8rem, 4vw, 1.4rem);
       line-height: 100%;
     }
 

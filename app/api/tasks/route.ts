@@ -12,6 +12,8 @@ export async function POST(req: Request) {
 
     const { title, description, date, completed, important } = await req.json();
 
+    console.log('Received task data:', { title, description, date, completed, important });
+
     if (!title || !description || !date) {
       return NextResponse.json({
         error: "Missing required fields",
@@ -61,7 +63,7 @@ export async function GET(req: Request) {
     return NextResponse.json(tasks);
   } catch (error) {
     console.log("ERROR GETTING TASKS: ", error);
-    return NextResponse.json({ error: "Error getting tasks", status: 500 });
+    return NextResponse.json({ error: "Error updating task", status: 500 });
   }
 }
 
@@ -86,6 +88,6 @@ export async function PUT(req: Request) {
     return NextResponse.json(task);
   } catch (error) {
     console.log("ERROR UPDATING TASK: ", error);
-    return NextResponse.json({ error: "Error updating task", status: 500 });
+    return NextResponse.json({ error: "Error deleting task", status: 500 });
   }
 }
