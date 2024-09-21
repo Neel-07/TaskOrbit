@@ -1,22 +1,64 @@
+# Task Orbit
+
+**Task Orbit** is a task management application that allows users to organize their tasks using a Kanban board. With a user-friendly interface, this app provides functionality for creating, editing, and deleting tasks, as well as tracking their progress through customizable boards.
+
+## Features
+
+- **Kanban Board Layout**: Organize tasks into different columns (To Do, In Progress, Completed).
+- **Task Management**: Create, edit, and delete tasks easily.
+- **Drag and Drop Functionality**: Move tasks between columns with a simple drag-and-drop interface.
+- **Responsive Design**: Optimized for both desktop and mobile devices.
+- **Date Management**: Easily set and view due dates for tasks.
+
+## Tech Stack
+
+- **Frontend**: 
+  - React
+  - TypeScript
+  - Styled-components
+  - React Beautiful DnD (Drag and Drop library)
+  
+- **Backend**: 
+  - Node.js (if applicable)
+  - Express (if applicable)
+  - Database of your choice (e.g., PostgreSQL, MongoDB)
+
+## Installation
+
+To get started with the project, follow these steps:
+
+1. **Clone the repository**:
+
+   ```bash
+   git clone https://github.com/yourusername/task-orbit.git
+   cd task-orbit
+
+2. **Install dependencies**:
+
+   ```bash
+    npm install
+
+3. **Start the development server**:
+
+   ```bash
+    npm start
+
+4. **Open your browser and navigate to http://localhost:3000 to see the app in action.**
+
+
+# Usage
+
+**Create a Task**: Fill out the task form to add new tasks to your Kanban board.
+**Edit a Task**: Click the edit button on a task to modify its details.
+**Delete a Task**: Use the delete button to remove a task from the board (with confirmation).
+**Drag and Drop**: Move tasks between columns by dragging them to the desired location
+
+
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
 
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
