@@ -18,7 +18,6 @@
     "moment": "^2.30.1",
     "mongodb": "^6.9.0",
     "next": "14.2.12",
-    "next.js": "^1.0.3",
     "nextjs-toploader": "^3.6.15",
     "prisma": "^5.19.1",
     "react": "^18",
