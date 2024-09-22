@@ -1,13 +1,12 @@
 import type { Metadata } from "next";
 import { Nunito } from "next/font/google";
 import { ClerkProvider } from "@clerk/nextjs";
-import { auth } from '@clerk/nextjs/server'; // Use auth() to check authentication
+import { auth } from "@clerk/nextjs/server";
 import "./globals.css";
 import Sidebar from "./components/Sidebar/Sidebar";
 import GlobalStyleProvider from "./providers/GlobalStyleProvider";
 import ContextProvider from "./providers/ContextProvider";
 import NextTopLoader from "nextjs-toploader";
-import { SignIn } from "@clerk/nextjs"; // Import SignIn component
 
 const nunito = Nunito({
   weight: ["400", "500", "600", "700", "800"],
@@ -24,7 +23,7 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const { userId } = auth(); // Fetch userId from auth()
+  const { userId } = auth();
 
   return (
     <ClerkProvider>
@@ -46,18 +45,8 @@ export default function RootLayout({
           />
           <ContextProvider>
             <GlobalStyleProvider>
-              {/* If userId exists (authenticated), show Sidebar and content */}
-              {userId ? (
-                <>
-                  <Sidebar />
-                  <div className="w-full">{children}</div>
-                </>
-              ) : (
-                // If no userId, show SignIn page
-                <div className="flex items-center justify-center w-full">
-                  <SignIn />
-                </div>
-              )}
+              {userId && <Sidebar />}
+              <div className="w-full">{children}</div>
             </GlobalStyleProvider>
           </ContextProvider>
         </body>
